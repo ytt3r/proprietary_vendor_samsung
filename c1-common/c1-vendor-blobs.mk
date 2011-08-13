@@ -14,59 +14,29 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/c1-common/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/c1-common/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/c1-common/proprietary/audio/libaudio.so:obj/lib/libaudio.so \
     vendor/samsung/c1-common/proprietary/audio/libmediayamahaservice.so:obj/lib/libmediayamahaservice.so \
-    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so
+    vendor/samsung/c1-common/proprietary/audio/libaudiopolicy.so:obj/lib/libaudiopolicy.so \
+    vendor/samsung/c1-common/proprietary/libMali.so:obj/lib/libMali.so
 
 # All the blobs necessary for galaxys2 devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/c1-common/proprietary/libakm.so:system/lib/libakm.so \
-    vendor/samsung/c1-common/proprietary/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/c1-common/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
-    vendor/samsung/c1-common/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/samsung/c1-common/proprietary/libcamera.so:system/lib/libcamera.so \
-    vendor/samsung/c1-common/proprietary/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/c1-common/proprietary/libEGL.so:system/lib/libEGL.so \
     vendor/samsung/c1-common/proprietary/libexif.so:system/lib/libexif.so \
-    vendor/samsung/c1-common/proprietary/libfimc.so:system/lib/libfimc.so \
-    vendor/samsung/c1-common/proprietary/libfimg.so:system/lib/libfimg.so \
     vendor/samsung/c1-common/proprietary/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
     vendor/samsung/c1-common/proprietary/libGLESv2.so:system/lib/libGLESv2.so \
     vendor/samsung/c1-common/proprietary/libMali.so:system/lib/libMali.so \
     vendor/samsung/c1-common/proprietary/libOpenSLES.so:system/lib/libOpenSLES.so \
-    vendor/samsung/c1-common/proprietary/libPanoraMax3.so:system/lib/libPanoraMax3.so \
     vendor/samsung/c1-common/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/c1-common/proprietary/libs5pjpeg.so:system/lib/libs5pjpeg.so \
-    vendor/samsung/c1-common/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-    vendor/samsung/c1-common/proprietary/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/c1-common/proprietary/libsecjpegarcsoft.so:system/lib/libsecjpegarcsoft.so \
-    vendor/samsung/c1-common/proprietary/libsecjpegboard.so:system/lib/libsecjpegboard.so \
-    vendor/samsung/c1-common/proprietary/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
     vendor/samsung/c1-common/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/c1-common/proprietary/libtvoutcec.so:system/lib/libtvoutcec.so \
-    vendor/samsung/c1-common/proprietary/libtvoutddc.so:system/lib/libtvoutddc.so \
-    vendor/samsung/c1-common/proprietary/libtvoutedid.so:system/lib/libtvoutedid.so \
-    vendor/samsung/c1-common/proprietary/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
-    vendor/samsung/c1-common/proprietary/libtvoutfimc.so:system/lib/libtvoutfimc.so \
-    vendor/samsung/c1-common/proprietary/libtvoutfimg.so:system/lib/libtvoutfimg.so \
-    vendor/samsung/c1-common/proprietary/libtvouthdmi.so:system/lib/libtvouthdmi.so \
-    vendor/samsung/c1-common/proprietary/libtvout_jni.so:system/lib/libtvout_jni.so \
-    vendor/samsung/c1-common/proprietary/libtvoutservice.so:system/lib/libtvoutservice.so \
-    vendor/samsung/c1-common/proprietary/libtvout.so:system/lib/libtvout.so
+    vendor/samsung/c1-common/proprietary/libsec-ril.so:system/lib/libsec-ril.so
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/BCM4330B1_002.001.003.0128.0162.hcd:system/bin/BCM4330B1_002.001.003.0128.0162.hcd \
-    vendor/samsung/c1-common/proprietary/rild:system/bin/rild \
-    vendor/samsung/c1-common/proprietary/tvoutserver:system/bin/tvoutserver
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/c1-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/c1-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+    vendor/samsung/c1-common/proprietary/rild:system/bin/rild
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
@@ -85,7 +55,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/c1-common/proprietary/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
     vendor/samsung/c1-common/proprietary/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-    vendor/samsung/c1-common/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.smdkv310.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     vendor/samsung/c1-common/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so
